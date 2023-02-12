@@ -2,8 +2,8 @@
 
 /*
       PALETA DE CORES:
-
-            
+      verde: #49a09d
+      Lilás: #5f2c82
 */
 
 * {
@@ -13,7 +13,7 @@
       box-sizing: border-box;
 }
 
-body {
+body, html {
       background-color: #5f2c82;
       width: 100vw;
       height: 100vh;
@@ -26,22 +26,21 @@ main {
 }
 
 section#login {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.477);
       background-color: white;
       width: 250px;
       height: 550px;
       border-radius: 20px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.497);
-      
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      overflow: hidden;
 }
 
 section#login > div#imagem {
       display: block;
-      background: #5f2c82 url(../imagens/login.jpg) no-repeat center center;
+      background: black url(../imagens/login.jpg) no-repeat center center;
       background-size: cover;
       height: 200px;
 }
@@ -49,33 +48,4 @@ section#login > div#imagem {
 section#login > div#formulario {
       display: block;
       padding: 10px;
-}
-
-section > div#formulario > h1 {
-      text-align: center;
-}
-
-section > div#formulario > p {
-      font-size: smaller;
-}
-
-section > div#formulario > form#dados {
-      background-color: aqua;
-      margin: 10px;
-      padding: 10px;
-      border-radius: 10px;
-}
-
-section > div#formulario > form#dados > input {
-      background-color: aqua;
-      height: 30px;
-      border-radius: 5px;
-}
-
-section > div#formulario > form#submeter > input {
-      background-color: aqua;
-      height: 30px;
-      width: 200px;
-      margin: auto;
-      border-radius: 10px;
 }
