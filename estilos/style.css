@@ -31,11 +31,14 @@ section#login {
       left: 50%;
       transform: translate(-50%, -50%);
       overflow: hidden;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.477);
+
       background-color: white;
       width: 250px;
       height: 550px;
       border-radius: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.477);
+
+      transition: width 0.3s, height 0.3s;
 }
 
 section#login > div#imagem {
